@@ -1,0 +1,577 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js" lang="">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <script src="script/vendor/modernizr/modernizr.js"></script>
+</head>
+
+<body>
+    <!--[if lt IE 8]>
+        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="navbar navbar-default navbar-static-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">MENU</button>
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="">RPX Customer Database</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Welcome, User ID</a></li>
+                    <li class="dropdown ">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Account &nbsp;<span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li class=""><a href="#">Home</a></li>
+                            <li class=""><a href="#">Options</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Logout</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+    <div class="container-fluid main-container">
+        <div class="col-md-2 sidebar">
+            <div class="row">
+
+                <!-- Menu -->
+                <div class="side-menu">
+                    <nav class="navbar navbar-default navbar-rpx" role="navigation">
+                        <!-- Main Menu -->
+                        <div class="side-menu-container">
+                            <ul class="nav navbar-nav">
+                                <li class="panel panel-default active" id="dropdown">
+                                    <a data-toggle="collapse" href="#nav-item-master">
+                                        <span class="glyphicon glyphicon-dashboard"></span> Master <span class="caret"></span>
+                                    </a>
+
+                                    <div id="nav-item-master" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                            <ul class="nav navbar-nav">
+                                                <li class="active"><a href="#"><span class="glyphicon glyphicon-user"></span> Customer</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Status Account</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-map-marker"></span> Address Type</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-volume-up"></span> Communication Type</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-user"></span> Contact Type</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-cloud"></span> NPWP Type</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-list-alt"></span> Industry</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-flag"></span> Teritory Area</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Business Type</a></li>
+                                                <li><a href="#"><span class="glyphicon glyphicon-file"></span> Document Type</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </li>
+
+                                <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Option</a></li>
+                            </ul>
+                        </div>
+                        <!-- /.navbar-collapse -->
+                    </nav>
+                </div><!-- Menu -->
+            </div>
+        </div><!-- sidebar -->
+        <div class="col-md-10 content">
+
+            <ol class="breadcrumb">
+                <li>Master</li>
+                <li class="active">Customer</li>
+            </ol>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-success btn-goto" data-goto="index.html" >List</button>
+                        <button type="button" class="btn btn-primary btn-goto" data-goto="master-customer-add.html" >Add New</button>
+                        <button type="button" class="btn btn-primary modal-toggler-pres">Edit</button>
+                        <button type="button" class="btn btn-primary modal-toggler-pres">Save</button>
+                        <button type="button" class="btn btn-primary modal-toggler-pres">Cancel</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sc-12 space-top-v3">
+                    <div class="col-lg-6 col-md-6 col-sc-12">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="i1" class="col-sm-4 control-label">Account Number</label>
+                                <div class="col-sm-8"><input type="text" class="form-control" id="i1" ></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="col-sm-4 control-label">Profile</label>
+                                <div class="col-sm-8">
+                                    <div class="col-sm-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="i2a" value="Express"> Express
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="i2b" value="Agency"> Agency
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-6">
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="i23" value="Logistic"> Logistic
+                                        </label>
+                                        <label class="checkbox-inline">
+                                            <input type="checkbox" id="i24" value="Property"> Property
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i3" class="col-sm-4 control-label">Sales ID</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="i3">
+                                        <div class="input-group-addon"><a href="#" class="no-text-decoration">&hellip;</a></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i4" class="col-sm-4 control-label">Business Type</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>B2B</option>
+                                        <option>B2C</option>
+                                        <option>C2C</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i5" class="col-sm-4 control-label">Sales Name</label>
+                                <div class="col-sm-8"><input type="text" class="form-control" id="i5" ></div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i6" class="col-sm-4 control-label">Sales Force</label>
+                                <div class="col-sm-8"><input type="text" class="form-control" id="i6" ></div>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sc-12">
+                        <div class="form-horizontal">
+                            <div class="form-group">
+                                <label for="i7" class="col-sm-4 control-label">Parent Account</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" id="i7">
+                                        <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i8" class="col-sm-4 control-label">Load Date</label>
+                                <div class="col-sm-8">
+                                    <div class="input-group">
+                                        <input type="date" class="form-control" id="i8">
+                                        <div class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i9" class="col-sm-4 control-label">e-Invoice</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Yes</option>
+                                        <option>No</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="i10" class="col-sm-4 control-label">Payment Behaviour</label>
+                                <div class="col-sm-8">
+                                    <select class="form-control">
+                                        <option>Lancar</option>
+                                        <option>Tidak Lancar</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row space-top-v3">
+                <div class="col-sm-12">
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li class="active"><a href="#master-company-information" role="tab" data-toggle="tab" >Company Information</a></li>
+                        <li><a href="#master-shipment-profile" role="tab" data-toggle="tab" >Shipment Profile</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="master-company-information">
+                            
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="btn-group" role="group" aria-label="...">
+                                        <button type="button" class="btn btn-success" >Add New</button>
+                                        <button type="button" class="btn btn-primary" >Edit</button>
+                                        <button type="button" class="btn btn-primary" >Save</button>
+                                        <button type="button" class="btn btn-primary" >Cancel</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-lg-12 col-md-12 col-sc-12 space-top-v2">
+                                    <div class="col-lg-6 col-md-6 col-sc-12 space-top-v1">
+                                        <form class="form-horizontal">
+
+                                            <div class="form-group">
+                                                <label for="i11" class="col-sm-4 control-label">Address Type</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <select class="form-control">
+                                                            <option>HO</option>
+                                                            <option>BI</option>
+                                                            <option>FP</option>
+                                                            <option>etc</option>
+                                                        </select>
+                                                        <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i12" class="col-sm-4 control-label">Company Name</label>
+                                                <div class="col-sm-8"><input type="text" class="form-control" id="i12" ></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i13" class="col-sm-4 control-label">Company Address</label>
+                                                <div class="col-sm-8"><textarea class="form-control" id="i13" ></textarea></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i14" class="col-sm-4 control-label">Postal Code</label>
+                                                <div class="col-sm-8"><input type="text" class="form-control" id="i14" ></div>
+                                            </div>
+
+                                            <div class="col-sm-12">
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="i15" class="col-sm-6 control-label">Sub District</label>
+                                                        <div class="col-sm-6"><input type="text" class="form-control" id="i15" ></div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6">
+                                                    <div class="form-group">
+                                                        <label for="i16" class="col-sm-6 control-label">District</label>
+                                                        <div class="col-sm-6"><input type="text" class="form-control" id="i16" ></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i17" class="col-sm-4 control-label">City ID</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control">
+                                                        <option>City ABC</option>
+                                                        <option>City DEF</option>
+                                                        <option>City HIJ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i17" class="col-sm-4 control-label">Country ID</label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control">
+                                                        <option>Country ABC</option>
+                                                        <option>Country DEF</option>
+                                                        <option>Country HIJ</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-sc-12 space-top-v1">
+                                        <div class="form-horizontal">
+                                            <div class="col-sm-12">
+
+                                                <div class="form-group">
+                                                    <label for="i18" class="col-sm-4 control-label">NPWP</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i18" ></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label class="col-sm-4 control-label">Profile</label>
+                                                    <div class="col-sm-8">
+                                                        <label class="checkbox-inline">
+                                                            <input type="radio" id="i19" value="PPN"> PPN
+                                                        </label>
+                                                        <label class="checkbox-inline">
+                                                            <input type="radio" id="i20" value="PPh"> PPh
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="i21" class="col-sm-4 control-label">SIC Code</label>
+                                                    <div class="col-sm-8">
+                                                        <div class="input-group">
+                                                            <input type="text" class="form-control" id="i21">
+                                                            <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="i22" class="col-sm-4 control-label">Sector</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i22" ></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="i23" class="col-sm-4 control-label">Industry</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i23" ></div>
+                                                </div>
+
+                                                <div class="form-group">
+                                                    <label for="i24" class="col-sm-4 control-label">Commodity</label>
+                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i24" ></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row space-top-v2">
+                                <div class="panel panel-primary space-hor-v2">
+
+                                    <div class="panel-heading">Contact Information</div>
+
+                                    <div class="panel-body space-top-v1">
+
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-primary" id="master-customer-contact-information">
+                                                <div class="panel-heading">Main Contact</div>
+                                                <div class="panel-body">
+                                                    
+                                                    <div class="row">
+                                                        
+                                                        <div class="btn-group space-hor-v2" role="group" aria-label="CRUD">
+                                                            <button type="button" class="btn btn-success modal-toggler-pres" >Add New</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Edit</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Save</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Cancel</button>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="row space-top-v3">
+                                                        <div class="col-sm-12">
+                                                            
+                                                            <div class="form-horizontal">
+                                                                <div class="form-group">
+                                                                    <label for="i25" class="col-sm-4 control-label">Contact Person</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i25" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i26" class="col-sm-4 control-label">Job Title/Dept</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i26" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i27" class="col-sm-4 control-label">Office Phone</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i27" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i28" class="col-sm-4 control-label">Ext.</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i28" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i29" class="col-sm-4 control-label">Mobile Phone</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i29" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i30" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8"><input type="email" class="form-control" id="i30" ></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col-sm-6">
+                                            <div class="panel panel-primary" id="master-customer-contact-information">
+                                                <div class="panel-heading">Billing</div>
+                                                <div class="panel-body">
+                                                    
+                                                    <div class="row">
+                                                        
+                                                        <div class="btn-group space-hor-v2" role="group" aria-label="CRUD">
+                                                            <button type="button" class="btn btn-success modal-toggler-pres" >Add New</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Edit</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Save</button>
+                                                            <button type="button" class="btn btn-primary modal-toggler-pres" >Cancel</button>
+                                                        </div>
+                                                    </div>
+                                            
+                                                    <div class="row space-top-v3">
+                                                        <div class="col-sm-12">
+                                                            
+                                                            <div class="form-horizontal">
+                                                                <div class="form-group">
+                                                                    <label for="i25" class="col-sm-4 control-label">Contact Person</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i25" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i26" class="col-sm-4 control-label">Job Title/Dept</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i26" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i27" class="col-sm-4 control-label">Office Phone</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i27" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i28" class="col-sm-4 control-label">Ext.</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i28" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i29" class="col-sm-4 control-label">Mobile Phone</label>
+                                                                    <div class="col-sm-8"><input type="text" class="form-control" id="i29" ></div>
+                                                                </div>
+                                                                
+                                                                <div class="form-group">
+                                                                    <label for="i30" class="col-sm-4 control-label">Email</label>
+                                                                    <div class="col-sm-8"><input type="email" class="form-control" id="i30" ></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row space-top-v2">
+                                <div class="panel panel-primary space-hor-v2">
+                                    <div class="panel-heading">Paperwork Requirement</div>
+                                    <div class="panel-body">
+                                        <div class="row">
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Profile</label>
+                                                        <div class="col-sm-8">
+                                                            <label class="checkbox">
+                                                                <div class="col-sm-8"><input type="checkbox" id="i31" value="SIUP/PMA"> SIUP/PMA *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i32" value="NPWP"> NPWP *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i33" value="TDP"> TDP *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i34" value="KTP PIC"> KTP PIC *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i35" value="OTHERS"> OTHERS</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="col-sm-6">
+                                                <div class="form-horizontal">
+                                                    <div class="form-group">
+                                                        <label class="col-sm-4 control-label">Personal</label>
+                                                        <div class="col-sm-8">
+                                                            <label class="checkbox">
+                                                                <div class="col-sm-8"><input type="checkbox" id="i36" value="KTP/PASSPORT"> KTP/PASSPORT *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i37" value="NPWP"> NPWP</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i38" value="KITAS/KIMS"> KITAS/KIMS *</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                                <div class="col-sm-8"><input type="checkbox" id="i40" value="Others"> OTHERS</div> <div class="col-sm-4"><a href="#" class="modal-toggler-pres">Upload</a></div>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div role="tabpanel" class="tab-pane" id="master-shipment-profile">
+                            <h3 class="text-center">The application is being developed while your viewing this presentation.</h3>
+                            <h3 class="text-center">Thank you for your appreciation.</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- content -->
+    </div>
+
+    <footer class="pull-left footer">
+        <hr class="divider">
+        <p class="col-md-12">
+            Copyright &COPY; 2015 <a href="#">Company</a>
+        </p>
+    </footer>
+    </div>
+    <!-- /container -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="presModal" tabindex="-1" role="dialog" aria-labelledby="presModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h3 class="modal-title" id="myModalLabel">Hello!</h3>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center" >The application is being developed while your viewing this presentation.</p>
+                    <p class="text-center" >Thank you for your appreciation.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script/vendor/jquery/dist/jquery.js"></script>
+    <script src="script/vendor/bootstrap-sass/assets/javascripts/bootstrap.js"></script>
+    <script src="script/app.js"></script>
+</body>
+
+</html>
