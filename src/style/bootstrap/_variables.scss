@@ -10,10 +10,10 @@ $bootstrap-sass-asset-helper: false !default;
 
 $gray-base:              #000;
 $gray-darker:            lighten($gray-base, 13.5%); // #222
-$gray-dark:              #7b8a8b;   // #333
-$gray:                   #95a5a6; // #555
-$gray-light:             #b4bcc2;   // #999
-$gray-lighter:           #ecf0f1; // #eee
+$gray-dark:              #333;   // #333
+$gray:                   #555; // #555
+$gray-light:             #999;   // #999
+$gray-lighter:           #eee; // #eee
 
 $brand-primary:         #2C3E50;
 $brand-success:         #18BC9C;
@@ -88,8 +88,8 @@ $icon-font-svg-id:        "glyphicons_halflingsregular";
 //
 //## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
 
-$padding-base-vertical:     10px;
-$padding-base-horizontal:   15px;
+$padding-base-vertical:     5px;
+$padding-base-horizontal:   10px;
 
 $padding-large-vertical:    18px;
 $padding-large-horizontal:  27px;
@@ -184,7 +184,7 @@ $input-bg-disabled:              $gray-lighter;
 //** Text color for `<input>`s
 $input-color:                    $text-color;
 //** `<input>` border color
-$input-border:                   #dce4ec;
+$input-border:                   $gray-light;
 
 // TODO: Rename `$input-border-radius` to `$input-border-radius-base` in v4
 //** Default `.form-control` border radius
@@ -202,11 +202,11 @@ $input-border-focus:             $brand-primary;
 $input-color-placeholder:        #acb6c0;
 
 //** Default `.form-control` height
-$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 4);
+$input-height-base:              ($line-height-computed + ($padding-base-vertical * 2) + 2);
 //** Large `.form-control` height
-$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 4);
+$input-height-large:             (ceil($font-size-large * $line-height-large) + ($padding-large-vertical * 2) + 2);
 //** Small `.form-control` height
-$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 4);
+$input-height-small:             (floor($font-size-small * $line-height-small) + ($padding-small-vertical * 2) + 2);
 
 //** `.form-group` margin
 $form-group-margin-bottom:       15px;
@@ -320,7 +320,7 @@ $screen-md-max:              ($screen-lg-min - 1);
 //** Number of columns in the grid.
 $grid-columns:              12;
 //** Padding between columns. Gets divided in half for the left and right.
-$grid-gutter-width:         30px;
+$grid-gutter-width:         20px;
 // Navbar collapse
 //** Point at which the navbar becomes uncollapsed.
 $grid-float-breakpoint:     $screen-sm-min;
@@ -422,13 +422,13 @@ $nav-disabled-link-color:                   $gray-light;
 $nav-disabled-link-hover-color:             $gray-light;
 
 //== Tabs
-$nav-tabs-border-color:                     $gray-lighter;
+$nav-tabs-border-color:                     $gray-light;
 
 $nav-tabs-link-hover-border-color:          $gray-lighter;
 
 $nav-tabs-active-link-hover-bg:             $body-bg;
 $nav-tabs-active-link-hover-color:          $brand-primary;
-$nav-tabs-active-link-hover-border-color:   $gray-lighter;
+$nav-tabs-active-link-hover-border-color:   $gray-light;
 
 $nav-tabs-justified-link-border-color:            $gray-lighter;
 $nav-tabs-justified-active-link-border-color:     $body-bg;
@@ -712,7 +712,7 @@ $panel-default-border:        $gray-lighter;
 $panel-default-heading-bg:    $gray-lighter;
 
 $panel-primary-text:          #fff;
-$panel-primary-border:        $brand-primary;
+$panel-primary-border:        $gray-light;
 $panel-primary-heading-bg:    $brand-primary;
 
 $panel-success-text:          $state-success-text;

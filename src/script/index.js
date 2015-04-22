@@ -14,10 +14,12 @@
  *                                                          
  */
 
-var Navigation = require( './Navigation' );
+var Navigation = require( './Navigation' )
+,   UploadButton = require( './UploadButton' );
 
 (function( $ ) {
     
     Navigation.init();
+    UploadButton.init();
 
 })(jQuery);

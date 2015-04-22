@@ -1,4 +1,7 @@
 <!doctype html>
+
+
+
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -20,12 +23,18 @@
 </head>
 
 <body>
+
     <!--[if lt IE 8]>
         <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
+
+
+
+    <!-- .navbar-static-top -->
+
     <nav class="navbar navbar-default navbar-static-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="container">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle navbar-toggle-sidebar collapsed">MENU</button>
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
@@ -34,7 +43,6 @@
                 <a class="navbar-brand" href="">RPX Customer Database</a>
             </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#">Welcome, User ID</a></li>
@@ -49,18 +57,31 @@
                     </li>
                 </ul>
             </div>
-            <!-- /.navbar-collapse -->
         </div>
-        <!-- /.container-fluid -->
     </nav>
+
+
+
+    <!-- .container -->
+
     <div class="container-fluid main-container">
+
+
+
+        <!-- .sidebar -->
+
         <div class="col-md-2 sidebar">
+
             <div class="row">
 
-                <!-- Menu -->
+
+
+                <!-- .side-menu -->
+
                 <div class="side-menu">
+
                     <nav class="navbar navbar-default navbar-rpx" role="navigation">
-                        <!-- Main Menu -->
+
                         <div class="side-menu-container">
                             <ul class="nav navbar-nav">
                                 <li class="panel panel-default active" id="dropdown">
@@ -89,11 +110,15 @@
                                 <li><a href="#"><span class="glyphicon glyphicon-plane"></span> Option</a></li>
                             </ul>
                         </div>
-                        <!-- /.navbar-collapse -->
                     </nav>
-                </div><!-- Menu -->
+                </div>
             </div>
-        </div><!-- sidebar -->
+        </div>
+
+
+
+        <!-- .content -->
+
         <div class="col-md-10 content">
 
             <ol class="breadcrumb">
@@ -101,9 +126,13 @@
                 <li class="active">Customer</li>
             </ol>
 
+
+
+            <!-- .btn-group.buton-group-action -->
+
             <div class="row">
                 <div class="col-md-12">
-                    <div class="btn-group" role="group" aria-label="...">
+                    <div class="btn-group buton-group-action" role="group" aria-label="...">
                         <button type="button" class="btn btn-primary btn-goto" data-goto="index.html" >List</button>
                         <button type="button" class="btn btn-success btn-goto" data-goto="master-customer-add.html" >Add New</button>
                         <button type="button" class="btn btn-primary" >Edit</button>
@@ -113,10 +142,22 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-12 col-md-12 col-sc-12 space-top-v3">
-                    <div class="col-lg-6 col-md-6 col-sc-12">
-                        <form class="form-horizontal">
+
+
+            <!-- #mas_cus_1 -->
+
+            <form class="row" id="mas_cus_1">
+
+                <div class="col-sm-12 space-top-v3">
+
+
+
+                    <!-- #mas_cus_1_left -->
+
+                    <div class="col-sm-6" id="mas_cus_1_left">
+
+                        <div class="form-horizontal">
+
                             <div class="form-group">
                                 <label for="i1" class="col-sm-4 control-label">Account Number</label>
                                 <div class="col-sm-8"><input type="text" class="form-control" id="i1" ></div>
@@ -124,20 +165,24 @@
 
                             <div class="form-group">
                                 <label class="col-sm-4 control-label">Profile</label>
+
                                 <div class="col-sm-8">
-                                    <div class="col-sm-6">
-                                        <label class="checkbox-inline">
+
+                                    <div class="col-sm-12">
+
+                                        <label class="col-sm-6 checkbox-inline">
                                             <input type="checkbox" id="i2a" value="Express"> Express
                                         </label>
-                                        <label class="checkbox-inline">
+
+                                        <label class="col-sm-6 checkbox-inline">
                                             <input type="checkbox" id="i2b" value="Agency"> Agency
                                         </label>
-                                    </div>
-                                    <div class="col-sm-6">
-                                        <label class="checkbox-inline">
+
+                                        <label class="col-sm-6 checkbox-inline">
                                             <input type="checkbox" id="i23" value="Logistic"> Logistic
                                         </label>
-                                        <label class="checkbox-inline">
+
+                                        <label class="col-sm-6 checkbox-inline">
                                             <input type="checkbox" id="i24" value="Property"> Property
                                         </label>
                                     </div>
@@ -146,10 +191,15 @@
 
                             <div class="form-group">
                                 <label for="i3" class="col-sm-4 control-label">Sales ID</label>
+
                                 <div class="col-sm-8">
+
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="i3">
-                                        <div class="input-group-addon"><a href="#" class="no-text-decoration">&hellip;</a></div>
+                                        <input type="text" class="form-control upload-result" id="i7" placeholder="Type / Choose File">
+                                        <div class="input-group-addon upload-btn-outer">
+                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                            <input type="file" class="button upload-btn">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -174,16 +224,26 @@
                                 <label for="i6" class="col-sm-4 control-label">Sales Force</label>
                                 <div class="col-sm-8"><input type="text" class="form-control" id="i6" ></div>
                             </div>
-                        </form>
+                        </div>
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sc-12">
+
+
+
+                    <!-- #mas_cus_1_right -->
+
+                    <div class="col-sm-6" id="mas_cus_1_right">
+
                         <div class="form-horizontal">
+
                             <div class="form-group">
                                 <label for="i7" class="col-sm-4 control-label">Parent Account</label>
                                 <div class="col-sm-8">
                                     <div class="input-group">
-                                        <input type="text" class="form-control" id="i7">
-                                        <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                        <input type="text" class="form-control upload-result" id="i7" placeholder="Choose File">
+                                        <div class="input-group-addon upload-btn-outer">
+                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                            <input type="file" class="button upload-btn">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -220,20 +280,33 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </form>
 
-            <div class="row space-top-v3">
+
+
+            <!-- #mas_cus_2 -->
+
+            <div class="row space-top-v3" id="mas_cus_2">
+
                 <div class="col-sm-12">
+
                     <ul class="nav nav-tabs" role="tablist">
-                        <li class="active"><a href="#master-company-information" role="tab" data-toggle="tab" >Company Information</a></li>
-                        <li><a href="#master-shipment-profile" role="tab" data-toggle="tab" >Shipment Profile</a></li>
+                        <li class="active"><a href="#com_inf" role="tab" data-toggle="tab" >Company Information</a></li>
+                        <li><a href="#ship_prof" role="tab" data-toggle="tab" >Shipment Profile</a></li>
                     </ul>
 
                     <div class="tab-content">
-                        <div role="tabpanel" class="tab-pane active" id="master-company-information">
+
+
+
+                        <!-- #com_inf -->
+
+                        <div role="tabpanel" class="tab-pane active" id="com_inf">
                             
                             <div class="row">
+
                                 <div class="col-md-12">
+
                                     <div class="btn-group" role="group" aria-label="...">
                                         <button type="button" class="btn btn-success" >Add New</button>
                                         <button type="button" class="btn btn-primary" >Edit</button>
@@ -243,22 +316,43 @@
                                 </div>
                             </div>
 
-                            <div class="row">
-                                <div class="col-lg-12 col-md-12 col-sc-12 space-top-v2">
-                                    <div class="col-lg-6 col-md-6 col-sc-12 space-top-v1">
+
+
+                            <!-- #com_inf_1 -->
+
+                            <div class="row" id="com_inf_1">
+
+                                <div class="col-sm-12 space-top-v2">
+
+                                    <div class="col-sm-6 space-top-v2 space-top-v1">
+
                                         <form class="form-horizontal">
 
                                             <div class="form-group">
                                                 <label for="i11" class="col-sm-4 control-label">Address Type</label>
+
                                                 <div class="col-sm-8">
-                                                    <div class="input-group">
+
+                                                    <div class="input-group col-sm-12">
                                                         <select class="form-control">
                                                             <option>HO</option>
                                                             <option>BI</option>
                                                             <option>FP</option>
                                                             <option>etc</option>
                                                         </select>
-                                                        <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i11b" class="col-sm-4 control-label">Address</label>
+                                                <div class="col-sm-8">
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control upload-result" id="i11b" placeholder="Type / Choose File">
+                                                        <div class="input-group-addon upload-btn-outer">
+                                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                                            <input type="file" class="button upload-btn">
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
@@ -278,19 +372,14 @@
                                                 <div class="col-sm-8"><input type="text" class="form-control" id="i14" ></div>
                                             </div>
 
-                                            <div class="col-sm-12">
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="i15" class="col-sm-6 control-label">Sub District</label>
-                                                        <div class="col-sm-6"><input type="text" class="form-control" id="i15" ></div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                        <label for="i16" class="col-sm-6 control-label">District</label>
-                                                        <div class="col-sm-6"><input type="text" class="form-control" id="i16" ></div>
-                                                    </div>
-                                                </div>
+                                            <div class="form-group">
+                                                <label for="i15" class="col-sm-4 control-label">Sub District</label>
+                                                <div class="col-sm-8"><input type="text" class="form-control" id="i15" ></div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="i16" class="col-sm-4 control-label">District</label>
+                                                <div class="col-sm-8"><input type="text" class="form-control" id="i16" ></div>
                                             </div>
 
                                             <div class="form-group">
@@ -316,8 +405,11 @@
                                             </div>
                                         </form>
                                     </div>
-                                    <div class="col-lg-6 col-md-6 col-sc-12 space-top-v1">
+
+                                    <div class="col-sm-6 space-top-v2 space-top-v1">
+
                                         <div class="form-horizontal">
+
                                             <div class="col-sm-12">
 
                                                 <div class="form-group">
@@ -341,8 +433,11 @@
                                                     <label for="i21" class="col-sm-4 control-label">SIC Code</label>
                                                     <div class="col-sm-8">
                                                         <div class="input-group">
-                                                            <input type="text" class="form-control" id="i21">
-                                                            <div class="input-group-addon"><span class="glyphicon glyphicon-option-horizontal"></span></div>
+                                                            <input type="text" class="form-control upload-result" id="i7" placeholder="Type / Choose File">
+                                                            <div class="input-group-addon upload-btn-outer">
+                                                                <span class="glyphicon glyphicon-folder-open"></span>
+                                                                <input type="file" class="button upload-btn">
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -367,16 +462,28 @@
                                 </div>
                             </div>
 
-                            <div class="row space-top-v2">
-                                <div class="panel panel-primary space-hor-v2">
+
+
+                            <!-- #com_inf_2 -->
+
+                            <div class="row space-top-v3" id="com_inf_2" >
+
+                                <div class="panel panel-primary space-hor-v1" >
 
                                     <div class="panel-heading">Contact Information</div>
 
-                                    <div class="panel-body space-top-v1">
+                                    <div class="panel-body">
 
                                         <div class="col-sm-6">
-                                            <div class="panel panel-primary" id="master-customer-contact-information">
+
+
+
+                                            <!-- #com_inf_2_1 -->
+
+                                            <div class="panel panel-primary" id="com_inf_2_1">
+
                                                 <div class="panel-heading">Main Contact</div>
+
                                                 <div class="panel-body">
                                                     
                                                     <div class="row">
@@ -390,9 +497,11 @@
                                                     </div>
                                             
                                                     <div class="row space-top-v3">
+
                                                         <div class="col-sm-12">
                                                             
-                                                            <div class="form-horizontal">
+                                                            <form class="form-horizontal">
+
                                                                 <div class="form-group">
                                                                     <label for="i25" class="col-sm-4 control-label">Contact Person</label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control" id="i25" ></div>
@@ -422,7 +531,7 @@
                                                                     <label for="i30" class="col-sm-4 control-label">Email</label>
                                                                     <div class="col-sm-8"><input type="email" class="form-control" id="i30" ></div>
                                                                 </div>
-                                                            </div>
+                                                            </form>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -430,8 +539,15 @@
                                         </div>
                                         
                                         <div class="col-sm-6">
-                                            <div class="panel panel-primary" id="master-customer-contact-information">
+
+
+
+                                            <!-- #com_inf_2_2 -->
+
+                                            <div class="panel panel-primary" id="com_inf_2_2" >
+
                                                 <div class="panel-heading">Billing</div>
+
                                                 <div class="panel-body">
                                                     
                                                     <div class="row">
@@ -445,9 +561,11 @@
                                                     </div>
                                             
                                                     <div class="row space-top-v3">
+
                                                         <div class="col-sm-12">
                                                             
                                                             <div class="form-horizontal">
+
                                                                 <div class="form-group">
                                                                     <label for="i25" class="col-sm-4 control-label">Contact Person</label>
                                                                     <div class="col-sm-8"><input type="text" class="form-control" id="i25" ></div>
@@ -487,16 +605,30 @@
                                 </div>
                             </div>
 
-                            <div class="row space-top-v2">
-                                <div class="panel panel-primary space-hor-v2">
+
+
+                            <!-- #com_inf_3 -->
+
+                            <div class="row" id="com_inf_3">
+
+                                <div class="panel panel-primary space-hor-v1">
+
                                     <div class="panel-heading">Paperwork Requirement</div>
+
                                     <div class="panel-body">
-                                        <div class="row">
+
+                                        <form class="row">
+
                                             <div class="col-sm-6">
+
                                                 <div class="form-horizontal">
+
                                                     <div class="form-group">
+
                                                         <label class="col-sm-4 control-label">Profile</label>
+
                                                         <div class="col-sm-8">
+
                                                             <label class="checkbox">
                                                                 <div class="col-sm-8"><input type="checkbox" id="i31" value="SIUP/PMA"> SIUP/PMA *</div> <div class="col-sm-4"><a href="#">Upload</a></div>
                                                                 <div class="col-sm-8"><input type="checkbox" id="i32" value="NPWP"> NPWP *</div> <div class="col-sm-4"><a href="#">Upload</a></div>
@@ -510,9 +642,13 @@
                                             </div>
 
                                             <div class="col-sm-6">
+
                                                 <div class="form-horizontal">
+
                                                     <div class="form-group">
+
                                                         <label class="col-sm-4 control-label">Personal</label>
+
                                                         <div class="col-sm-8">
                                                             <label class="checkbox">
                                                                 <div class="col-sm-8"><input type="checkbox" id="i36" value="KTP/PASSPORT"> KTP/PASSPORT *</div> <div class="col-sm-4"><a href="#">Upload</a></div>
@@ -524,17 +660,1829 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div role="tabpanel" class="tab-pane" id="master-shipment-profile">2</div>
+
+
+
+                        <div role="tabpanel" class="tab-pane" id="ship_prof">
+
+                            <div class="row">
+                                
+                                <div class="col-sm-12">
+
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="active"><a href="#ship_prof_express" role="tab" data-toggle="tab" >Express</a></li>
+                                        <li class=""><a href="#ship_prof_logistic" role="tab" data-toggle="tab" >Logistic</a></li>
+                                        <li class=""><a href="#ship_prof_agency" role="tab" data-toggle="tab" >Agency</a></li>
+                                        <li class=""><a href="#ship_prof_property" role="tab" data-toggle="tab" >Property</a></li>
+                                    </ul>
+                                    
+                                    <div class="tab-content">
+                                        
+                                    
+                                    
+                                        <!-- ship_prof_express -->
+
+                                        <div role="tabpanel" class="tab-pane active" id="ship_prof_express">
+
+
+
+                                            <div class="row">
+
+                                                <div class="sm-12">
+                                                    
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="active"><a href="#ship_prof_express_import" role="tab" data-toggle="tab" >Import</a></li>
+                                                        <li class=""><a href="#ship_prof_express_export" role="tab" data-toggle="tab" >Export</a></li>
+                                                        <li class=""><a href="#ship_prof_express_domestic" role="tab" data-toggle="tab" >Domestic</a></li>
+                                                    </ul>
+                                                    
+                                                    <div class="tab-content">
+                                                        
+                                                    
+                                                    
+                                                        <!-- ship_prof_express_import -->
+
+                                                        <div role="tabpanel" class="tab-pane active" id="ship_prof_express_import">
+
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Origin</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight / Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Freq. per Week</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Regular P/U</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Day</label>
+                                                                            <div class="col-sm-8"><input type="date" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Time</label>
+                                                                            <div class="col-sm-8"><input type="time" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Transportation</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BS"> BS
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BT"> BT
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect to ID"> Collect to ID
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Duty Tax</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="col-sm-12 checkbox-inline space-bottom-v1">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1">
+                                                                                    <input type="checkbox" value="TT max credit"> TT max credit
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BS to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                            <div class="input-group-addon upload-btn-outer">
+                                                                                                <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BT to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                        <div class="input-group-addon upload-btn-outer">
+                                                                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Email</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">HS CODE</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">D/T Value Threshold</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Clearance Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIB
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> IPBSO
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIBK
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Supporting Docs</label>
+                                                                            <div class="col-sm-8"><textarea class="form-control" ></textarea></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <!-- ship_prof_express_export -->
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_express_export">
+
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Destination</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight / Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Freq. per Week</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Regular P/U</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Day</label>
+                                                                            <div class="col-sm-8"><input type="date" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Time</label>
+                                                                            <div class="col-sm-8"><input type="time" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="IP"> IP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="IE"> IE
+                                                                                </label>
+                                                                                <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                    <input type="checkbox" value="Other"> Other
+
+                                                                                    <div class="inline-half">
+                                                                                        <input type="text" class="form-control upload-result" >
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Transportation</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Credit"> Credit
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect"> Collect
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Duty Tax</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="col-sm-12 checkbox-inline space-bottom-v1">
+                                                                                    <input type="checkbox" value="BS"> BS
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BS to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                            <div class="input-group-addon upload-btn-outer">
+                                                                                                <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BT to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                        <div class="input-group-addon upload-btn-outer">
+                                                                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Email</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">HS CODE</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">D/T Value Threshold</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Clearance Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PE Consol"> PE Consol
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PE Single"> PE Single*
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PE Single Facility"> PE Single Facility
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PE Created by RPX"> PE Created by RPX
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PE Created by Customer"> PE Created by Customer
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="Return Shipment"> Repair / Return Shipment
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Supporting Docs</label>
+                                                                            <div class="col-sm-8"><textarea class="form-control" ></textarea></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <!-- ship_prof_express_domestic -->
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_express_domestic">
+
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Origin</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight / Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Freq. per Week</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Regular P/U</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Day</label>
+                                                                            <div class="col-sm-8"><input type="date" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Time</label>
+                                                                            <div class="col-sm-8"><input type="time" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="HCP"> HCP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="SDP"> SDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="MDP"> MDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="NDP"> NDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="ECP"> ECP
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Transportation</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BS"> BS
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BT"> BT
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect to ID"> Collect to ID
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Duty Tax</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="col-sm-12 checkbox-inline space-bottom-v1">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1">
+                                                                                    <input type="checkbox" value="TT max credit"> TT max credit
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BS to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                            <div class="input-group-addon upload-btn-outer">
+                                                                                                <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BT to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                        <div class="input-group-addon upload-btn-outer">
+                                                                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Email</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">HS CODE</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">D/T Value Threshold</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Clearance Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIB
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> IPBSO
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIBK
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Discount</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rates Card</label>
+                                                                            <div class="col-sm-8">
+                                                                                <div class="input-group">
+                                                                                    <input type="text" class="form-control upload-result" id="i7" placeholder="Choose File">
+                                                                                    <div class="input-group-addon upload-btn-outer">
+                                                                                        <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                        <input type="file" class="button upload-btn">
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Supporting Docs</label>
+                                                                            <div class="col-sm-8"><textarea class="form-control" ></textarea></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                        <!-- ship_prof_logistic -->
+
+                                        <div role="tabpanel" class="tab-pane" id="ship_prof_logistic">
+
+                                            <div class="row">
+
+                                                <div class="sm-12">
+                                                    
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="active"><a href="#ship_prof_logistic_forwarding" role="tab" data-toggle="tab" >Forwarding</a></li>
+                                                        <li class=""><a href="#ship_prof_logistic_trucking" role="tab" data-toggle="tab" >Trucking</a></li>
+                                                        <li class=""><a href="#ship_prof_logistic_warehouse" role="tab" data-toggle="tab" >Logistic Warehouse</a></li>
+                                                    </ul>
+                                                    
+                                                    <div class="tab-content">
+                                                        
+                                                    
+                                                    
+                                                        <!-- ship_prof_logistic_forwarding -->
+
+                                                        <div role="tabpanel" class="tab-pane active" id="ship_prof_logistic_forwarding">
+                                                            
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Location</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Space Requirement</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="FTL"> FTL
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="LTL"> LTL
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label small">Transportation Mode</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Air"> Air
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Land"> Land
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Sea"> Sea
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Combine"> Combine
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Container Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="2 Ton"> 2 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="4 Ton"> 4 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="8 Ton"> 8 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight/Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Credit"> Credit
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect"> Collect
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Email - Operational</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Phone - Operational</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-horizontal">
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Commodity Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="DG"> DG
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Non - DG"> Non - DG
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Surcharge</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Pickup"> Pickup
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Additional"> Additional
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Insurance"> Insurance
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+                                                        <!-- ship_prof_logistic_trucking -->
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_logistic_trucking">
+                                                            
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Location</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Space Requirement</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="FTL"> FTL
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="LTL"> LTL
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label small">Transportation Mode</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Air"> Air
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Land"> Land
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Sea"> Sea
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Combine"> Combine
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Container Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="2 Ton"> 2 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="4 Ton"> 4 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="8 Ton"> 8 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight/Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Credit"> Credit
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect"> Collect
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Email - Operational</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Phone - Operational</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-horizontal">
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Commodity Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="DG"> DG
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Non - DG"> Non - DG
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Surcharge</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Pickup"> Pickup
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Additional"> Additional
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Insurance"> Insurance
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <!-- ship_prof_logistic_warehouse -->
+
+                                                        <div role="tabpanel" class="tab-pane active" id="ship_prof_logistic_warehouse">
+                                                            
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Location</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Space Requirement</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="FTL"> FTL
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="LTL"> LTL
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label small">Transportation Mode</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Air"> Air
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Land"> Land
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Sea"> Sea
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Combine"> Combine
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Container Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="2 Ton"> 2 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="4 Ton"> 4 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="8 Ton"> 8 Ton
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight/Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-offset-4 col-sm-8 space-top-v1"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Credit"> Credit
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect"> Collect
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Email - Operational</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Phone - Operational</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+                                                                    <div class="form-horizontal">
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Commodity Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="DG"> DG
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Non - DG"> Non - DG
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Surcharge</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Pickup"> Pickup
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Additional"> Additional
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="Insurance"> Insurance
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="Other"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                        <div role="tabpanel" class="tab-pane" id="ship_prof_agency">
+
+
+
+
+                                            <div class="row">
+
+                                                <div class="sm-12">
+                                                    
+                                                    <ul class="nav nav-tabs" role="tablist">
+                                                        <li class="active"><a href="#ship_prof_agency_ancillory" role="tab" data-toggle="tab" >Ancillory Service</a></li>
+                                                        <li class=""><a href="#ship_prof_agency_cargo" role="tab" data-toggle="tab" >Cargo Agency</a></li>
+                                                        <li class=""><a href="#ship_prof_agency_warehouse" role="tab" data-toggle="tab" >Transit Warehouse</a></li>
+                                                        <li class=""><a href="#ship_prof_agency_clearance" role="tab" data-toggle="tab" >Clearance (Non FedEx)</a></li>
+                                                    </ul>
+                                                    
+                                                    <div class="tab-content">
+                                                        
+                                                    
+                                                    
+                                                        <!-- ship_prof_agency_ancillory -->
+
+                                                        <div role="tabpanel" class="tab-pane active" id="ship_prof_agency_ancillory">
+
+                                                            <div class="row">
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Origin</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Weight / Shipment</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Freq. per Week</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Rev Commitment</label>
+                                                                            <div class="col-sm-6"><input type="text" class="form-control" ></div>
+                                                                            <div class="col-sm-2 control-label-end reset-padding-h"><p> / month</p></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Regular P/U</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Day</label>
+                                                                            <div class="col-sm-8"><input type="date" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Time</label>
+                                                                            <div class="col-sm-8"><input type="time" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Service Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="HCP"> HCP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="SDP"> SDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="MDP"> MDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="NDP"> NDP
+                                                                                </label>
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="ECP"> ECP
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Payment Type</label>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Transportation</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BS"> BS
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="BT"> BT
+                                                                                </label>
+
+                                                                                <label class="checkbox-inline">
+                                                                                    <input type="checkbox" value="Collect to ID"> Collect to ID
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Duty Tax</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <label class="col-sm-12 checkbox-inline space-bottom-v1">
+                                                                                    <input type="checkbox" value="Cash"> Cash
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1">
+                                                                                    <input type="checkbox" value="TT max credit"> TT max credit
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BS to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                            <div class="input-group-addon upload-btn-outer">
+                                                                                                <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+
+                                                                                <label class="col-sm-12 checkbox-inline space-ver-v1 clearfix">
+                                                                                    <input type="checkbox" value="BS to acc"> BT to acc
+
+                                                                                    <div class="input-group inline-half">
+                                                                                        <input type="text" class="form-control upload-result" placeholder="Type / Choose File">
+                                                                                        <div class="input-group-addon upload-btn-outer">
+                                                                                            <span class="glyphicon glyphicon-folder-open"></span>
+                                                                                            <input type="file" class="button upload-btn">
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Email</label>
+                                                                            <div class="col-sm-8"><input type="email" class="form-control" ></div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="col-sm-6">
+
+                                                                    <div class="form-horizontal">
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">Major Commodity</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label">HS CODE</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group">
+                                                                            <label class="col-sm-4 control-label small">D/T Value Threshold</label>
+                                                                            <div class="col-sm-8"><input type="text" class="form-control" ></div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Clearance Type</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIB
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> IPBSO
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> PIBK
+                                                                                    </label>
+                                                                                    <label class="col-sm-4 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> BC23P2
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Term of Payment</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 14 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-6 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> 30 Days
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="form-group space-top-v1">
+                                                                            <label class="col-sm-4 control-label">Competitor</label>
+
+                                                                            <div class="col-sm-8">
+
+                                                                                <div class="col-sm-12">
+
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> DHL
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> UPS
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline">
+                                                                                        <input type="checkbox" value="PIB"> TNT
+                                                                                    </label>
+                                                                                    <label class="col-sm-12 checkbox-inline clearfix space-top-v1">
+                                                                                        <input type="checkbox" value="PIB"> Other
+
+                                                                                        <div class="inline-half">
+                                                                                            <input type="text" class="form-control upload-result" >
+                                                                                        </div>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+
+
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_agency_cargo">
+                                                            
+                                                            <h2>ship_prof_agency_cargo</h2>
+                                                        </div>
+
+
+
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_agency_warehouse">
+                                                            
+                                                            <h2>ship_prof_agency_warehouse</h2>
+                                                        </div>
+
+
+
+
+                                                        <div role="tabpanel" class="tab-pane" id="ship_prof_agency_clearance">
+                                                            
+                                                            <h2>ship_prof_agency_clearance</h2>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                    
+                                    
+                                    
+                                        <div role="tabpanel" class="tab-pane" id="ship_prof_property">
+                                            
+
+
+
+                                            <div class="row">
+
+                                                <div class="sm-12">
+                                                    <h2>ship_prof_property</h2>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div><!-- content -->
+        </div>
     </div>
 
     <footer class="pull-left footer space-top-v3">
@@ -543,8 +2491,6 @@
             Copyright &COPY; 2015 <a href="#">Company</a>
         </p>
     </footer>
-    </div>
-    <!-- /container -->
 
     <script src="script/vendor/jquery/dist/jquery.js"></script>
     <script src="script/vendor/bootstrap-sass/assets/javascripts/bootstrap.js"></script>

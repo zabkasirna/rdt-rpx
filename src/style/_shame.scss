@@ -1,0 +1,70 @@
+/* SHAME: LAYOUT */
+.panel {
+    .tab-pane & { margin-bottom: $grid-gutter-width / 4; }
+
+    div[ class^="col" ] {
+        padding-left: $grid-gutter-width / 4;
+        padding-right: $grid-gutter-width / 4;
+    }
+
+    .panel-body {
+        padding-left: $grid-gutter-width / 4;
+        padding-right: $grid-gutter-width / 4;
+    }
+
+    .form-horizontal .form-group {
+        margin-right: 10px;
+        margin-left: -20px;
+    }
+
+    .panel {
+
+        & {
+            margin-bottom: 11px;
+        }
+    }
+
+    .panel-body {
+
+        & { padding-bottom: 0; }
+    }
+}
+
+/* SHAME: UPLOAD FILE */
+.input-group-addon {
+    & .glyphicon { pointer-events: none; }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $brand-primary;
+        border-color: $brand-primary;
+        color: #FFF;
+    }
+}
+
+.upload-btn-outer {
+    position: relative;
+    overflow: hidden;
+
+    .upload-btn {
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%; height: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+/* SHAME: INPUT */
+.control-label-end {
+    padding-top: 6px;
+    text-align: left;
+
+    p { margin: 0; }
+}
+
+.inline-half {
+    position: absolute;
+    top: 0; right: 0;
+    width: 60%;
+}
